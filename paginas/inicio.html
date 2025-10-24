@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Hora de Ovo</title>
+    <link rel="stylesheet" href="../style/styleInicio.css" />
+    <nav>
+      <div id="titlebar">
+        <div class="titulo">
+          <img
+            class="icon"
+            src="../Artes/TittleBar/EggFrit.png"
+            alt="icone barra titulo"
+          />
+          <p class="title">Hora de Ovo</p>
+        </div>
+
+        <div class="teclas">
+          <div id="min">
+            <img src="../Artes/TittleBar/min.png" alt="minimizar" />
+          </div>
+          <div id="close">
+            <img src="../Artes/TittleBar/close.png" alt="fechar" />
+          </div>
+        </div>
+      </div>
+    </nav>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="container_sec">
+        <p>Tipo de Ovo!?</p>
+        <div class="container_tipo_ovo">
+          <div class="cada_ovo">
+            <img
+            class="img_ovo"
+              id="cozido"
+              src="../Artes/BoiledEgg.png"
+              alt="ovo cozido"
+              onclick="selecionarTipo('cozido')"
+            />
+            <p>Cozido</p>
+          </div>
+          <div class="cada_ovo">
+            <img
+            class="img_ovo"
+              id="frito"
+              src="../Artes/EggFrit.png"
+              alt="ovo frito"
+            />
+            <p>Frito</p>
+          </div>
+          <div class="cada_ovo">
+            <img
+            class="img_ovo"
+              id="mexido"
+              src="../Artes/OvoMexido.png"
+              alt="ovo mexido"
+            />
+            <p>Mexido</p>
+          </div>
+        </div>
+        <p>Dureza</p>
+        <div class="container_estrutura_ovo container_tipo_ovo">
+          <div class="cada_ovo estrutura">
+            <img
+              class="img_ovoD"
+              src="../Artes/GemaMoleGif.gif"
+              alt="mole"
+              onclick="selecionarDureza('mole')"
+            />
+            <p class="palavraDureza">Mole</p>
+          </div>
+          <div class="cada_ovo estrutura">
+            <img
+              class="img_ovoD"
+              src="../Artes/MediumGiff.gif"
+              alt="medio"
+              onclick="selecionarDureza('medio')"
+            />
+            <p class="palavraDureza">Médio</p>
+          </div>
+          <div class="cada_ovo estrutura">
+            <img
+              class="img_ovoD"
+              src="../Artes/OvoDuro.gif"
+              alt="duro"
+              onclick="selecionarDureza('duro')"
+            />
+            <p class="palavraDureza">Duro</p>
+          </div>
+          </div>
+          <button onclick="botaoCozinhar()">Cozinhar</button>
+        </div>
+      </div>
+    </div>
+<div id="janela" class="janela janela_cozido_mole">
+  <div class="timer">
+    <p id="relogio">00:00</p>
+    <img class="relogio" src="../Artes/RelogioGiff.gif" alt="relogio">
+    <img onclick="fecharJanela()" class="fechar" src="../Artes/TittleBar/close.png" alt="fechar janela">
+  </div>
+  
+</div>
+    <script src="../renderer.js"></script>
+    <script src="../script/script.js"></script>
+  </body>
+</html>
