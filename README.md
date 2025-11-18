@@ -34,3 +34,5 @@ npm install
 Rode o app:
 
 npm start
+
+https://github.com/user-attachments/assets/3d7d2b9a-c549-4d64-83a9-905b431c8daa
